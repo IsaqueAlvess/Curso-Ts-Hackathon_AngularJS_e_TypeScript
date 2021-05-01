@@ -7,23 +7,23 @@
     },
     {
       "id": 2,
-      "nome": "Notebook i5",
-      "preco": 4500
+      "nome": "Notebook i6",
+      "preco": "4580"
     },
     {
       "id": 3,
-      "nome": "Teclado Gamer",
-      "preco": 99.99
+      "nome": "Teclado Gamer X8P7",
+      "preco": "98.98"
     },
     {
       "id": 4,
-      "nome": "Mouse Gamer",
-      "preco": "89.99",
+      "nome": "Mouse Gamer 2",
+      "preco": "100",
       "desconto": 10
     },
     {
       "id": 5,
-      "nome": "Cabo USB 3.1",
+      "nome": "Cabo USB 3.0",
       "preco": "28.98",
       "desconto": 10
     }

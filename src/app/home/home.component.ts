@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Produto } from '../Objetos/Produto';
+import { Router} from '@angular/router';
 
+import { Produto } from '../Objetos/Produto';
 import { ProdutoService } from './../service/produto.service';
 
 @Component({
@@ -14,7 +15,7 @@ export class HomeComponent implements OnInit {
   produtos: Array<Produto> = []
   carregarLoading: boolean = false
 
-  constructor(private produtoService: ProdutoService) { }
+  constructor(private produtoService: ProdutoService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -35,6 +36,10 @@ export class HomeComponent implements OnInit {
        () => console.log('Requisição completa.') 
     )
       this.ngOnInit();
+  }
+
+  editar = (id: any) => {
+      this.router.navigate(['cadastro', id])
   }
 
 }
