@@ -14,4 +14,8 @@ export class ProdutoService {
     return this.$http.get <Produto[]> (`${this.API}`)
   }
 
+  excluirItem(id:any){
+    return this.$http.delete (`${this.API}/${id}`)
+  }
+
 }

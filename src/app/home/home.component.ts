@@ -22,11 +22,19 @@ export class HomeComponent implements OnInit {
       setTimeout(() =>{
         this.carregarLoading = true
         this.produtos = prods
-      }, 3000)
+      }, 1000)
     
     })
+  }
 
+  excluirItem = (id: any) =>{
 
+    this.produtoService.excluirItem(id).subscribe(
+       success => console.log("Deletou!"), 
+       error => console.log("Deu ruim!"),
+       () => console.log('Requisição completa.') 
+    )
+      this.ngOnInit();
   }
 
 }
