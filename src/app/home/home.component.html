@@ -11,8 +11,8 @@
     <tbody>
       <tr *ngFor= "let p of produtos">
         <th scope="row" > {{p.id}} </th>
-        <td>{{p.nome}}</td>
-        <td>{{p.preco}}</td>
+        <td>{{p.nome}} </td>
+        <td>{{p.preco | currency:'BRL'}}</td>
         <td><button type="button" class="btn btn-danger" (click)= "excluirItem(p.id)">Excluir</button></td>
       </tr>
       

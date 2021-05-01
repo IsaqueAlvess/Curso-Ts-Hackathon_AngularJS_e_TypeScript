@@ -18,4 +18,8 @@ export class ProdutoService {
     return this.$http.delete (`${this.API}/${id}`)
   }
 
+  adicionarItem(prod:Produto){
+    return this.$http.post(this.API, prod)
+  } 
+
 }
