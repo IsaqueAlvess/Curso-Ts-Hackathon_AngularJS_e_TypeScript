@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router'
  
-import { DiasDaSemana } from './../dias-da-semana.enum';
 import { Produto } from './../Objetos/Produto';
 import { ProdutoService } from "./../service/produto.service";
 
@@ -15,7 +14,7 @@ export class CadastroComponent implements OnInit {
 
   id: any
  
-  produto: Produto = new Produto(0,'', 0)
+  produto: Produto = new Produto(0,'',0,0)
 
   txtBotao: string = 'Salvar'
 
