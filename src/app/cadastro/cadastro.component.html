@@ -1,10 +1,15 @@
 
-<div>
+<div class="container">
 
     <label for="nome" class="form-label">Produto</label>
-    <input class="form-control" name="nome" id="nome" [(ngModel)]= "produto.nome">
-    <label for="nome" class="form-label">Preço</label>
-    <input class="form-control" name="preco" id="preco" [(ngModel)]= "produto.preco">
-    <button type="button" class="btn btn-success" (click)= "adicionar()" > {{txtBotao}} </button>
+    <input class="form-control" name="nome" id="nome" [(ngModel)]= "produto.nome" >
+    
+    <label for="preco" class="form-label">Preço</label>
+    <input class="form-control" name="preco" id="preco" [(ngModel)]= "produto.preco" placeholder="R$" >
+    
+    <label for="qtdeEstoque" class="form-label">Quantidade em estoque</label>
+    <input class="form-control" name="qtdeEstoque" id="qtdeEstoque" [(ngModel)]= "produto.qtdeEstoque" placeholder="Quantidade">
+
+    <button type="button" class="btn btn-success" (click)= "adicionar()" ng-disabled="cadastroForm.$invalid" style="margin-top: 10px;"> {{txtBotao}} </button>
 
 </div>

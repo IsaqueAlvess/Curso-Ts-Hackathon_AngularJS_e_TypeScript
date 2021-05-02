@@ -3,28 +3,40 @@
     {
       "id": 1,
       "nome": "Notebook i7",
-      "preco": 6500
+      "preco": 6500,
+      "qtdeEstoque": "23"
     },
     {
       "id": 2,
       "nome": "Notebook i6",
-      "preco": "4580"
+      "preco": "4580",
+      "qtdeEstoque": "44"
     },
     {
       "id": 3,
       "nome": "Teclado Gamer X8P7",
-      "preco": "98.98"
+      "preco": "98.98",
+      "qtdeEstoque": "22"
     },
     {
       "id": 4,
       "nome": "Mouse Gamer 2",
       "preco": "100",
-      "desconto": 10
+      "desconto": 10,
+      "qtdeEstoque": "12"
     },
     {
       "id": 5,
       "nome": "Cabo USB 3.0",
       "preco": "28.98",
+      "desconto": 10,
+      "qtdeEstoque": "120"
+    },
+    {
+      "id": 6,
+      "nome": "Transformador",
+      "qtdeEstoque": "22",
+      "preco": "129.00",
       "desconto": 10
     }
   ]
